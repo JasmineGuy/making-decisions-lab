@@ -87,9 +87,6 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 for (let i=0; i<family.length; i++) {
   console.log(family[i])
 }
-
-
-
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.
@@ -101,11 +98,11 @@ let evensArr = []
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
-// for (let i=0; i<nums.length; i++) {
-//   console.log(nums[i])
-// } if (nums[i] % 2 === 0) {
-//   evensArr.push(nums[i])
-// }
+for (let i = 0; i < nums.length; i++) {
+  if ((nums[i] % 2) === 0) {
+    evensArr.push(nums[i])
+  }
+}
 
 
 
@@ -157,8 +154,6 @@ changeMyMind = false
 console.log(changeMyMind)
 console.log(!(changeMyMind))
 
-
-
 ////////// PROBLEM 11 //////////
 
 // Do not edit the code below.
@@ -189,11 +184,11 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 // Use a for-loop to iterate through 'listOfNumbers', then check to see if the number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
-// for (let i =0; i <= listOfNumbers.length; i++) {
-//   if (listOfNumbers[i] % 3 ===0) {
-//     console.log(`${listOfNumbers[i]} is divisible by 3`)
-//   }
-// }
+for (let i = 0; i < listOfNumbers.length; i++) {
+  if (listOfNumbers[i] % 3 === 0) {
+    console.log(`${listOfNumbers[i]} is divisible by 3.`)
+  }
+}
 
 ////////// PROBLEM 13 //////////
 // Do not edit the code below.
@@ -204,9 +199,11 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 //   Loop backwards, starting at the end of the 'letters' array. Console-log every item in the array.
 // */
 
-// for (let i= letters.length - 1; i >= 0; i--) {
-//   console.log(letters[i])
-// }
+var letters = ['A', 'B', 'C', 'D', 'E'];
+
+for (let i = letters.length - 1; i >= 0; i--) {
+  console.log(letters[i])
+}
 
 
 ////////// Advanced Problems //////////
@@ -277,14 +274,14 @@ console.log(letterGrade)
   ...
 */
 
-for (let i=1; i<=100; i++) {
-if (i % 3 ===0 ) {
-  console.log("Dev")
-} else if (i % 5 === 0) {
-  console.log("Mountain")
-} else if (i % 3 ===0 && i % 5 ===0) {
-  console.log("DoubleWhammy")
-} else {
-  console.log(i)
-}
+for (i = 1; i < 101; i++ ) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log('Devmountain')
+  } else if (i % 3 === 0) {
+    console.log('Dev')
+  } else if (i % 5 === 0) {
+    console.log('mountain')
+  } else {
+    console.log(i)
+  }
 }
